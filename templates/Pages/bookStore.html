@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Books Store{% endblock %}
+{% block content %}
+    {% for book in book.books %}
+        <p>{{ book.title }}</p>
+        <p>{{ book.author }}</p>
+        <p>{{ book.price }}</p>
+    {% endfor %}
+{% endblock %}
